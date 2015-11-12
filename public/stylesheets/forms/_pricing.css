@@ -16,6 +16,10 @@
 
 .pricing {
   margin-top: 15px; }
+  @media (min-width: 900px) {
+    .column-two-thirds .pricing {
+      margin-right: -100%; }
+ }
   .pricing .pricing-column {
     position: relative;
     display: -moz-inline-stack;
@@ -23,7 +27,19 @@
     min-height: 105px;
     min-width: 2em;
     margin: 0 10px;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    /* IE7's font rendering meant some of the text was obscured with the default min-height */ }
+    .column-two-thirds .pricing .pricing-column {
+      min-height: 0;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 15px; }
+      @media (min-width: 900px) {
+        .column-two-thirds .pricing .pricing-column {
+          min-height: 105px;
+          width: auto;
+          margin-left: 10px;
+          margin-top: 0; } }
     .pricing .pricing-column:first-child {
       margin-left: 0; }
     .pricing .pricing-column label, .pricing .pricing-column .question-hint {
@@ -44,17 +60,23 @@
       color: #6f777b; }
   .pricing .pricing-input, .pricing .pricing-input-with-unit, .pricing .pricing-input-select {
     width: 100%;
-    position: absolute;
+    position: static;
     bottom: 0;
     left: 0;
     margin: 0;
     z-index: 10; }
-    .pricing .pricing-input-with-unit {
-      padding-left: 1.6em; }
-    .pricing .pricing-input-select {
-      margin: 0 0 15px 2%;
-      width: 98%;
-      font-size: 19px; }
+    @media (min-width: 900px) {
+      .pricing .pricing-input, .pricing .pricing-input-with-unit, .pricing .pricing-input-select {
+        position: absolute; } }
+  .pricing .pricing-input-with-unit {
+    padding-left: 1.6em; }
+  .pricing .pricing-input-select {
+    margin: 0 0 15px 0;
+    width: 98%;
+    font-size: 19px; }
+    @media (min-width: 900px) {
+      .pricing .pricing-input-select {
+        margin-left: 0; } }
   .pricing .pricing-unit {
     color: #bfc1c3;
     position: absolute;
@@ -68,7 +90,11 @@
     left: 0;
     width: 100%;
     text-align: center;
-    padding-bottom: 12px; }
+    padding-bottom: 12px;
+    display: none; }
+    @media (min-width: 900px) {
+      .pricing .pricing-preposition {
+        display: block; } }
 
 .visually-hidden {
   position: absolute;

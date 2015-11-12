@@ -58,13 +58,17 @@
       line-height: 1.14286; } }
 
 .search-result-highlighted-text {
-  padding: 0 2px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  background-color: #fff2d3;
-  background-image: url("./search-result-highlight-mask.png");
-  background-position: 0 -8px;
-  background-repeat: repeat; }
+  display: inline;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: none;
+  background: none; }
+  @media (max-width: 640px) {
+    .search-result-highlighted-text {
+      font-size: 14px;
+      line-height: 1.14286; } }
 
 .search-result-metadata {
   margin: 0;

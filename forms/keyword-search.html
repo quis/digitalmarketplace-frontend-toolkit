@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Link buttons - Digital Marketplace frontend toolkit</title>
+    <title>Keyword search - Digital Marketplace frontend toolkit</title>
 
     <script type="text/javascript">
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -131,20 +131,73 @@
 <main role="main" id="content" class="wrapper">
     <div id="wrapper">
         <header class="page-heading">
-            <h1>Link buttons</h1>
+            <h1>Keyword search</h1>
         </header>
+        <div class="grid-row">
+            <div class="column-one-third">
             
-            <a class='link-button' href='#'>View service</a>
+            <div class="govuk-option-select">
+  <div class="container-head">
+    <label class="option-select-label" for="keywords">
+      Keywords
+    </label>
+  </div>
+  <input class="filter-field-text" type="text" name="q" id="keywords" value="" maxlength="200">
+</div>
+            </div>
+        </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">url</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;#&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;View service&quot;</span>
+  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Keywords&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;keywords&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;q&quot;</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/link-button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/keyword-search.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&#39;link-button&#39;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&#39;#&#39;</span><span style="color: #008000; font-weight: bold">&gt;</span>View service<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;govuk-option-select&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;container-head&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;option-select-label&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;keywords&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      Keywords
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;filter-field-text&quot;</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;q&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;keywords&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">maxlength=</span><span style="color: #BA2121">&quot;200&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+        <div class="grid-row">
+            <div class="column-one-third">
+            
+            <div class="govuk-option-select">
+  <div class="container-head">
+    <label class="option-select-label" for="keywords">
+      Keywords (maximum 50 characters)
+    </label>
+  </div>
+  <input class="filter-field-text" type="text" name="q" id="keywords" value="" maxlength="50">
+</div>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Keywords (maximum 50 characters)&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;keywords&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;q&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">maxLength</span> <span style="color: #666666">=</span> <span style="color: #666666">50</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/keyword-search.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;govuk-option-select&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;container-head&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;option-select-label&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;keywords&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+      Keywords (maximum 50 characters)
+    <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;filter-field-text&quot;</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;text&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;q&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;keywords&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;&quot;</span> <span style="color: #7D9029">maxlength=</span><span style="color: #BA2121">&quot;50&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
     </div>

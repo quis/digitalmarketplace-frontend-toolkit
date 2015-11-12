@@ -93,3 +93,68 @@
     .browse-list-item-subtext {
       padding-top: 5px;
       padding-bottom: 5px; } }
+
+.browse-list-item-status-quiet, .browse-list-item-status-default, .browse-list-item-status-happy, .browse-list-item-status-angry {
+  border-left: 5px solid;
+  padding-left: 15px;
+  margin: 10px 0 0 0;
+  padding-bottom: 0 0 10px 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 700;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    .browse-list-item-status-quiet, .browse-list-item-status-default, .browse-list-item-status-happy, .browse-list-item-status-angry {
+      font-size: 16px;
+      line-height: 1.25; } }
+  .browse-list-item-status-quiet .browse-list-item-status-title, .browse-list-item-status-default .browse-list-item-status-title, .browse-list-item-status-happy .browse-list-item-status-title, .browse-list-item-status-angry .browse-list-item-status-title {
+    margin: 0; }
+  .browse-list-item-status-quiet .browse-list-item-status-hint, .browse-list-item-status-default .browse-list-item-status-hint, .browse-list-item-status-happy .browse-list-item-status-hint, .browse-list-item-status-angry .browse-list-item-status-hint {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    color: #6f777b;
+    margin: 0; }
+    @media (max-width: 640px) {
+      .browse-list-item-status-quiet .browse-list-item-status-hint, .browse-list-item-status-default .browse-list-item-status-hint, .browse-list-item-status-happy .browse-list-item-status-hint, .browse-list-item-status-angry .browse-list-item-status-hint {
+        font-size: 16px;
+        line-height: 1.25; } }
+  .browse-list-item-status-quiet .browse-list-item-status-list, .browse-list-item-status-default .browse-list-item-status-list, .browse-list-item-status-happy .browse-list-item-status-list, .browse-list-item-status-angry .browse-list-item-status-list {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    color: #6f777b;
+    list-style: disc;
+    padding: 5px 0 0 20px; }
+    @media (max-width: 640px) {
+      .browse-list-item-status-quiet .browse-list-item-status-list, .browse-list-item-status-default .browse-list-item-status-list, .browse-list-item-status-happy .browse-list-item-status-list, .browse-list-item-status-angry .browse-list-item-status-list {
+        font-size: 16px;
+        line-height: 1.25; } }
+
+.browse-list-item-status-quiet {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  color: #6f777b;
+  border-color: #bfc1c3; }
+  @media (max-width: 640px) {
+    .browse-list-item-status-quiet {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+.browse-list-item-status-default {
+  color: #0b0c0c;
+  border-color: #bfc1c3; }
+
+.browse-list-item-status-happy {
+  color: #00823b; }
+
+.browse-list-item-status-angry {
+  color: #b10e1e; }

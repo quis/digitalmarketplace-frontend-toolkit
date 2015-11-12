@@ -38,14 +38,13 @@
   height: 50px;
   margin: 0 0 15px 0;
   padding: 5px;
-  border: 1px solid #bfc1c3; }
+  border: 1px solid #bfc1c3;
+  width: 100%;
+  /* IE<8 cannot include borders and padding as part of width */ }
   @media (max-width: 640px) {
     .text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
       font-size: 16px;
       line-height: 1.25; } }
-  @media (min-width: 769px) {
-    .text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
-      width: 66%; } }
 
 .text-box-with-error, .text-box-large-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-after-with-error {
   border: 5px solid #b10e1e;
@@ -305,14 +304,12 @@
   line-height: 1;
   margin: 5px 0 0 0;
   padding: 0;
-  color: #6f777b; }
+  color: #6f777b;
+  width: 100%; }
   @media (max-width: 640px) {
     .word-count-counter {
       font-size: 16px;
       line-height: 1.25; } }
-  @media (min-width: 769px) {
-    .word-count-counter {
-      width: 66%; } }
 
 @font-face {
   font-family: GDS-Logo;
@@ -343,7 +340,8 @@
 
 .input-list .list-entry {
   vertical-align: middle;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  position: relative; }
 .input-list .list-entry-remove {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -351,16 +349,23 @@
   font-weight: 400;
   text-transform: none;
   display: block;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-top: 5px;
+  position: static; }
   @media (max-width: 640px) {
     .input-list .list-entry-remove {
       font-size: 16px;
       line-height: 1.25; } }
-  @media (min-width: 769px) {
+  @media (min-width: 641px) {
     .input-list .list-entry-remove {
       display: -moz-inline-stack;
       display: inline-block;
-      margin: 0 0 0 0.6em; } }
+      margin: 0 0 0 0.6em;
+      position: absolute;
+      top: 6px;
+      /* height of textbox minus its top-padding */
+      left: 100%;
+      margin-left: 0.6em; } }
 .input-list .text-box {
   padding-left: 1.84em;
   width: 100%;
@@ -368,8 +373,7 @@
   @media (min-width: 769px) {
     .input-list .text-box {
       display: -moz-inline-stack;
-      display: inline-block;
-      width: 66%; } }
+      display: inline-block; } }
 .input-list .text-box-number-label {
   float: left;
   font-family: "nta", Arial, sans-serif;
@@ -562,10 +566,8 @@ table.summary-item-body {
 .summary-item-field-heading-first {
   padding-left: 0; }
 
-.summary-item-row-incomplete .summary-item-field {
+.summary-item-row-incomplete .summary-item-field a {
   color: #cd4c0b; }
-  .summary-item-row-incomplete .summary-item-field a {
-    color: #cd4c0b; }
 .summary-item-row-incomplete .summary-item-field-first span {
   display: block;
   padding-left: 10px;
@@ -690,3 +692,18 @@ table.summary-item-body {
         left: -9999em;
         height: 0px;
         overflow: hidden; }
+
+.govuk-option-select {
+  margin-bottom: 30px; }
+  .govuk-option-select .container-head .option-select-label {
+    display: block; }
+  .govuk-option-select .options-container {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none; }
+    @media (max-width: 640px) {
+      .govuk-option-select .options-container {
+        font-size: 14px;
+        line-height: 1.14286; } }

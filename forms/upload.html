@@ -53,7 +53,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
   </head>
 
   <body class="">
@@ -104,23 +119,24 @@
     </div>
     <!--end global-header-bar-->
 
-    
-                        <div id="global-breadcrumb" class="header-context">
-                          <nav>
-                            <ol class="group" role="breadcrumbs">
-                              <li>
-                                <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
-                              </li>
-                            </ol>
-                          </nav>
-                        </div>
-                        <main role="main" id="content" class="wrapper">
-                            <div id="wrapper">
-                                <header class="page-heading">
-                                    <h1>File upload</h1>
-                                </header>
-                                    
-                                    
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>File upload</h1>
+        </header>
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
   <div class="question" id="question-1">
     <label for="input-question-1">
       <span class="question-heading">
@@ -134,7 +150,9 @@
     <input type="file" name="question-1" id="input-question-1" class="file-upload-input"  />
   </div>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please upload a file&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-1&quot;</span>
@@ -143,7 +161,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
@@ -157,8 +175,10 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
   <div class="question" id="question-2">
     <label for="input-question-2">
       <span class="question-heading-with-hint">
@@ -187,7 +207,9 @@
     <input type="file" name="question-2" id="input-question-2" class="file-upload-input"  />
   </div>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Please replace the file you previously uploaded&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
@@ -198,7 +220,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
@@ -227,8 +249,10 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
   <div class="question" id="question-3">
     <label for="input-question-3">
       <span class="question-heading">
@@ -253,7 +277,9 @@
     <input type="file" name="question-3" id="input-question-3" class="file-upload-input"  />
   </div>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Example of a link to the uploaded file&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">link</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;https://assets.digitalmarketplace.service.gov.uk/documents/654321/1234123412341234-pricing-document.pdf&quot;</span><span style="color: #666666">,</span>
@@ -264,7 +290,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
@@ -289,8 +315,10 @@
   <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+        <div class="grid-row">
+            <div class="column-two-thirds">
+            
+            
 <div class="validation-wrapper">
 
   <div class="question" id="question-4">
@@ -312,7 +340,9 @@
 
 </div>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            </div>
+        </div>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With a bad upload&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #666666">,</span>
@@ -322,7 +352,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;validation-wrapper&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
 
   <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -344,9 +374,9 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                            </div>
-                        </main>
-                    
+    </div>
+</main>
+
 
     <footer class="group js-footer" id="footer" role="contentinfo">
 
@@ -376,6 +406,9 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+    <script type="text/javascript" src="/public/javascripts/vendor/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="/public/javascripts/onready.js"></script>
+
   </body>
 </html>

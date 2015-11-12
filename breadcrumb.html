@@ -53,7 +53,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
   </head>
 
   <body class="">
@@ -104,23 +119,22 @@
     </div>
     <!--end global-header-bar-->
 
-    
-                        <div id="global-breadcrumb" class="header-context">
-                          <nav>
-                            <ol class="group" role="breadcrumbs">
-                              <li>
-                                <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
-                              </li>
-                            </ol>
-                          </nav>
-                        </div>
-                        <main role="main" id="content" class="wrapper">
-                            <div id="wrapper">
-                                <header class="page-heading">
-                                    <h1>Breadcrumb</h1>
-                                </header>
-                                    
-                                    <div id="global-breadcrumb" class="header-context">
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Breadcrumb</h1>
+        </header>
+            
+            <div id="global-breadcrumb" class="header-context">
   <nav>
     <ol class="group" role="breadcrumbs">
         <li><a href="./">Home</a></li>
@@ -138,7 +152,7 @@
     </ol>
   </nav>
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
@@ -162,7 +176,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-breadcrumb&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;global-breadcrumb&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;header-context&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;nav&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;ol</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;group&quot;</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;breadcrumbs&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         <span style="color: #008000; font-weight: bold">&lt;li&gt;&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;./&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Home<span style="color: #008000; font-weight: bold">&lt;/a&gt;&lt;/li&gt;</span>
@@ -182,9 +196,9 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                            </div>
-                        </main>
-                    
+    </div>
+</main>
+
 
     <footer class="group js-footer" id="footer" role="contentinfo">
 
@@ -214,6 +228,9 @@
 
     <script src="govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+    <script type="text/javascript" src="/public/javascripts/vendor/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="/public/javascripts/onready.js"></script>
+
   </body>
 </html>

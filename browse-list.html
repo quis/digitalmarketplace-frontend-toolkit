@@ -53,7 +53,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
   </head>
 
   <body class="">
@@ -104,23 +119,22 @@
     </div>
     <!--end global-header-bar-->
 
-    
-                        <div id="global-breadcrumb" class="header-context">
-                          <nav>
-                            <ol class="group" role="breadcrumbs">
-                              <li>
-                                <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
-                              </li>
-                            </ol>
-                          </nav>
-                        </div>
-                        <main role="main" id="content" class="wrapper">
-                            <div id="wrapper">
-                                <header class="page-heading">
-                                    <h1>Browse list</h1>
-                                </header>
-                                    
-                                    <nav role="navigation">
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Browse list</h1>
+        </header>
+            
+            <nav role="navigation">
   <ul class="browse-list">
     
       <li class="browse-list-item">
@@ -135,6 +149,7 @@
             Procurement framework: <a href="#">G-Cloud</a>
           </p>
         
+        
       </li>
     
       <li class="browse-list-item">
@@ -144,6 +159,7 @@
           <p class="browse-list-item-subtext">
             Procurement framework: <a href="#">Digital Services</a>
           </p>
+        
         
       </li>
     
@@ -159,11 +175,12 @@
             eg accounting, email
           </p>
         
+        
       </li>
     
   </ul>
 </nav>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
@@ -189,7 +206,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;navigation&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;navigation&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
       <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -204,6 +221,7 @@
             Procurement framework: <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>G-Cloud<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
           <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
         
+        
       <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
     
       <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -213,6 +231,7 @@
           <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-subtext&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
             Procurement framework: <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>Digital Services<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
           <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+        
         
       <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
     
@@ -228,14 +247,15 @@
             eg accounting, email
           <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
         
+        
       <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
     
   <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    <nav role="navigation">
+            
+            <nav role="navigation">
   <ul class="browse-list">
     
       <li class="browse-list-item">
@@ -246,11 +266,12 @@
           </p>
         
         
+        
       </li>
     
   </ul>
 </nav>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
@@ -264,7 +285,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;navigation&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;navigation&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
       <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -275,15 +296,309 @@
           <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
         
         
+        
       <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
     
   <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
 </pre></div>
 </div>
-                            </div>
-                        </main>
-                    
+            
+            <nav role="navigation">
+  <ul class="browse-list">
+    
+      <li class="browse-list-item">
+        <a class="browse-list-item-link" href="#nope"><span>Apply to G-Cloud 11</span></a>
+        
+        
+        
+          <div class="browse-list-item-status-quiet">
+            <p class="browse-list-item-status-title">
+              You haven’t started this yet
+            </p>
+            
+            
+          </div>
+        
+      </li>
+    
+      <li class="browse-list-item">
+        <a class="browse-list-item-link" href="#nope"><span>Apply to provide teams for digital outcomes</span></a>
+        
+          <p class="browse-list-item-body">
+            Provide teams to build and support digital outcomes.
+          </p>
+        
+        
+        
+          <div class="browse-list-item-status-happy">
+            <p class="browse-list-item-status-title">
+              You are submitting
+            </p>
+            
+            
+              <ul class="browse-list-item-status-list">
+                
+                  <li>
+                    digital outcomes
+                  </li>
+                
+                  <li>
+                    digital specialists
+                  </li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="browse-list-item-status-quiet">
+            <p class="browse-list-item-status-title">
+              You are not submitting
+            </p>
+            
+            
+              <ul class="browse-list-item-status-list">
+                
+                  <li>
+                    user research studios
+                  </li>
+                
+                  <li>
+                    participant recruitment
+                  </li>
+                
+              </ul>
+            
+          </div>
+        
+      </li>
+    
+      <li class="browse-list-item">
+        <a class="browse-list-item-link" href="#nope"><span>Apply to provide digital specialists</span></a>
+        
+          <p class="browse-list-item-body">
+            Provide individual specialists to work on digital services, programmes or projects.
+          </p>
+        
+        
+        
+          <div class="browse-list-item-status-default">
+            <p class="browse-list-item-status-title">
+              You have have completed this service.
+            </p>
+            
+              <p class="browse-list-item-status-hint">
+                You can edit it until the deadline
+              </p>
+            
+            
+          </div>
+        
+      </li>
+    
+      <li class="browse-list-item">
+        <a class="browse-list-item-link" href="#nope"><span>Make supplier declaration</span></a>
+        
+          <p class="browse-list-item-body">
+            Put yourself through the tender window
+          </p>
+        
+        
+        
+          <div class="browse-list-item-status-angry">
+            <p class="browse-list-item-status-title">
+              You must do this before any services can be submitted
+            </p>
+            
+            
+          </div>
+        
+      </li>
+    
+  </ul>
+</nav>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+  <span style="color: #008000; font-weight: bold">with</span>
+  <span style="color: #19177C">items</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;statuses&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #666666">{</span>
+                <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;quiet&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You haven\u2019t started this yet&quot;</span>
+            <span style="color: #666666">}</span>
+        <span style="color: #666666">],</span> 
+        <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Apply to G-Cloud 11&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Provide teams to build and support digital outcomes.&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;statuses&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #666666">{</span>
+                <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;happy&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;list&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+                    <span style="color: #BA2121">&quot;digital outcomes&quot;</span><span style="color: #666666">,</span> 
+                    <span style="color: #BA2121">&quot;digital specialists&quot;</span>
+                <span style="color: #666666">],</span> 
+                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You are submitting&quot;</span>
+            <span style="color: #666666">},</span> 
+            <span style="color: #666666">{</span>
+                <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;quiet&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;list&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+                    <span style="color: #BA2121">&quot;user research studios&quot;</span><span style="color: #666666">,</span> 
+                    <span style="color: #BA2121">&quot;participant recruitment&quot;</span>
+                <span style="color: #666666">],</span> 
+                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You are not submitting&quot;</span>
+            <span style="color: #666666">}</span>
+        <span style="color: #666666">],</span> 
+        <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Apply to provide teams for digital outcomes&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Provide individual specialists to work on digital services, programmes or projects.&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;statuses&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #666666">{</span>
+                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You have have completed this service.&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;hint&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You can edit it until the deadline&quot;</span>
+            <span style="color: #666666">}</span>
+        <span style="color: #666666">],</span> 
+        <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Apply to provide digital specialists&quot;</span>
+    <span style="color: #666666">},</span> 
+    <span style="color: #666666">{</span>
+        <span style="color: #BA2121">&quot;body&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Put yourself through the tender window&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;link&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;statuses&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span>
+            <span style="color: #666666">{</span>
+                <span style="color: #BA2121">&quot;type&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;angry&quot;</span><span style="color: #666666">,</span> 
+                <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;You must do this before any services can be submitted&quot;</span>
+            <span style="color: #666666">}</span>
+        <span style="color: #666666">],</span> 
+        <span style="color: #BA2121">&quot;title&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Make supplier declaration&quot;</span>
+    <span style="color: #666666">}</span>
+<span style="color: #666666">]</span>
+<span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/browse-list.html&quot;</span> <span style="color: #BC7A00">%}</span>
+<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
+</pre></div>
+</div>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;nav</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;navigation&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span&gt;</span>Apply to G-Cloud 11<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+        
+        
+        
+          <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-quiet&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-title&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              You haven’t started this yet
+            <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+            
+            
+          <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span&gt;</span>Apply to provide teams for digital outcomes<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Provide teams to build and support digital outcomes.
+          <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+        
+        
+        
+          <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-happy&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-title&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              You are submitting
+            <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+            
+            
+              <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                
+                  <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+                    digital outcomes
+                  <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+                
+                  <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+                    digital specialists
+                  <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+                
+              <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-quiet&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-title&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              You are not submitting
+            <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+            
+            
+              <span style="color: #008000; font-weight: bold">&lt;ul</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-list&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                
+                  <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+                    user research studios
+                  <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+                
+                  <span style="color: #008000; font-weight: bold">&lt;li&gt;</span>
+                    participant recruitment
+                  <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+                
+              <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+            
+          <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span&gt;</span>Apply to provide digital specialists<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Provide individual specialists to work on digital services, programmes or projects.
+          <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+        
+        
+        
+          <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-default&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-title&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              You have have completed this service.
+            <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+            
+              <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+                You can edit it until the deadline
+              <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+            
+            
+          <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+      <span style="color: #008000; font-weight: bold">&lt;li</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-link&quot;</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#nope&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;span&gt;</span>Make supplier declaration<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;/a&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-body&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            Put yourself through the tender window
+          <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+        
+        
+        
+          <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-angry&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;browse-list-item-status-title&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              You must do this before any services can be submitted
+            <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+            
+            
+          <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
+        
+      <span style="color: #008000; font-weight: bold">&lt;/li&gt;</span>
+    
+  <span style="color: #008000; font-weight: bold">&lt;/ul&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/nav&gt;</span>
+</pre></div>
+</div>
+    </div>
+</main>
+
 
     <footer class="group js-footer" id="footer" role="contentinfo">
 
@@ -313,6 +628,9 @@
 
     <script src="govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+    <script type="text/javascript" src="/public/javascripts/vendor/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="/public/javascripts/onready.js"></script>
+
   </body>
 </html>

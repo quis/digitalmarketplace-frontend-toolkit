@@ -160,10 +160,8 @@ table.summary-item-body {
 .summary-item-field-heading-first {
   padding-left: 0; }
 
-.summary-item-row-incomplete .summary-item-field {
+.summary-item-row-incomplete .summary-item-field a {
   color: #cd4c0b; }
-  .summary-item-row-incomplete .summary-item-field a {
-    color: #cd4c0b; }
 .summary-item-row-incomplete .summary-item-field-first span {
   display: block;
   padding-left: 10px;

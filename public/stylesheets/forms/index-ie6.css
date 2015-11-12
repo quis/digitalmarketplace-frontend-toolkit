@@ -41,7 +41,9 @@
   margin: 0 0 15px 0;
   padding: 5px;
   border: 1px solid #bfc1c3;
-  width: 66%; }
+  width: 100%;
+  /* IE<8 cannot include borders and padding as part of width */
+  width: 98%; }
   @media (max-width: 640px) {
     .text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
       font-size: 16px;
@@ -302,7 +304,7 @@
   margin: 5px 0 0 0;
   padding: 0;
   color: #6f777b;
-  width: 66%; }
+  width: 100%; }
   @media (max-width: 640px) {
     .word-count-counter {
       font-size: 16px;
@@ -339,7 +341,9 @@
 
 .input-list .list-entry {
   vertical-align: middle;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  position: relative;
+  zoom: 1; }
 .input-list .list-entry-remove {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -348,11 +352,20 @@
   text-transform: none;
   display: block;
   margin-bottom: 15px;
+  margin-top: 5px;
+  position: static;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   display: inline;
-  margin: 0 0 0 0.6em; }
+  margin: 0 0 0 0.6em;
+  position: absolute;
+  top: 6px;
+  /* height of textbox minus its top-padding */
+  left: 100%;
+  margin-left: 0.6em;
+  top: auto;
+  left: 110%; }
   @media (max-width: 640px) {
     .input-list .list-entry-remove {
       font-size: 16px;
@@ -365,8 +378,7 @@
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  display: inline;
-  width: 66%; }
+  display: inline; }
 .input-list .text-box-number-label {
   float: left;
   font-family: "nta", Arial, sans-serif;
@@ -558,10 +570,8 @@ table.summary-item-body {
 .summary-item-field-heading-first {
   padding-left: 0; }
 
-.summary-item-row-incomplete .summary-item-field {
+.summary-item-row-incomplete .summary-item-field a {
   color: #cd4c0b; }
-  .summary-item-row-incomplete .summary-item-field a {
-    color: #cd4c0b; }
 .summary-item-row-incomplete .summary-item-field-first span {
   display: block;
   padding-left: 10px;
@@ -688,3 +698,18 @@ table.summary-item-body {
         left: -9999em;
         height: 0px;
         overflow: hidden; }
+
+.govuk-option-select {
+  margin-bottom: 30px; }
+  .govuk-option-select .container-head .option-select-label {
+    display: block; }
+  .govuk-option-select .options-container {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none; }
+    @media (max-width: 640px) {
+      .govuk-option-select .options-container {
+        font-size: 14px;
+        line-height: 1.14286; } }

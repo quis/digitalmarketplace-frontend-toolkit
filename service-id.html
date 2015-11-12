@@ -53,7 +53,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
   </head>
 
   <body class="">
@@ -104,26 +119,25 @@
     </div>
     <!--end global-header-bar-->
 
-    
-                        <div id="global-breadcrumb" class="header-context">
-                          <nav>
-                            <ol class="group" role="breadcrumbs">
-                              <li>
-                                <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
-                              </li>
-                            </ol>
-                          </nav>
-                        </div>
-                        <main role="main" id="content" class="wrapper">
-                            <div id="wrapper">
-                                <header class="page-heading">
-                                    <h1>Service ID</h1>
-                                </header>
-                                    
-                                    <div class="service-id">
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Service ID</h1>
+        </header>
+            
+            <div class="service-id">
   <span class="service-id-chunk">1234</span><span class="service-id-chunk">5678</span><span class="service-id-chunk">9012</span><span class="service-id-chunk">3456</span>
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">1234,</span> 
@@ -136,16 +150,16 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>1234<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>5678<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>9012<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>3456<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    <div class="service-id">
+            
+            <div class="service-id">
   <span class="service-id-chunk">5.G2.0151.068</span>
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">id</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #BA2121">&quot;5.G2.0151.068&quot;</span>
@@ -155,14 +169,14 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>5.G2.0151.068<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                            </div>
-                        </main>
-                    
+    </div>
+</main>
+
 
     <footer class="group js-footer" id="footer" role="contentinfo">
 
@@ -192,6 +206,9 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+    <script type="text/javascript" src="/public/javascripts/vendor/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="/public/javascripts/onready.js"></script>
+
   </body>
 </html>

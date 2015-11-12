@@ -53,7 +53,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
   </head>
 
   <body class="">
@@ -104,29 +119,28 @@
     </div>
     <!--end global-header-bar-->
 
-    
-                        <div id="global-breadcrumb" class="header-context">
-                          <nav>
-                            <ol class="group" role="breadcrumbs">
-                              <li>
-                                <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
-                              </li>
-                            </ol>
-                          </nav>
-                        </div>
-                        <main role="main" id="content" class="wrapper">
-                            <div id="wrapper">
-                                <header class="page-heading">
-                                    <h1>Notification banners</h1>
-                                </header>
-                                    
-                                    <div class="banner-success-without-action">
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Notification banners</h1>
+        </header>
+            
+            <div class="banner-success-without-action">
   <p class="banner-message">
     With plain text
   </p>
   
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With plain text&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;success&quot;</span>
@@ -135,7 +149,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-success-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-success-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     With plain text
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
@@ -143,14 +157,14 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    <div class="banner-success-without-action">
+            
+            <div class="banner-success-without-action">
   <p class="banner-message">
     <a href="#">With a link</a> and some plain text
   </p>
   
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;success&quot;</span>
@@ -159,7 +173,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-success-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-success-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>With a link<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span> and some plain text
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
@@ -167,14 +181,14 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    <div class="banner-warning-without-action">
+            
+            <div class="banner-warning-without-action">
   <p class="banner-message">
     <a href="#">With a link</a> and some plain text but without an action
   </p>
   
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text but without an action&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;warning&quot;</span>
@@ -183,7 +197,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-warning-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-warning-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>With a link<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span> and some plain text but without an action
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
@@ -191,14 +205,14 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    <div class="banner-destructive-with-action">
+            
+            <div class="banner-destructive-with-action">
   <p class="banner-message">
     With some plain text and an action
   </p>
   <button class="button-destructive banner-action">Action button</button>
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">action</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;button class=\&quot;button-destructive banner-action\&quot;&gt;Action button&lt;/button&gt;&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;With some plain text and an action&quot;</span><span style="color: #666666">,</span>
@@ -208,7 +222,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-destructive-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-destructive-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     With some plain text and an action
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
@@ -216,14 +230,14 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    <div class="banner-destructive-with-action">
+            
+            <div class="banner-destructive-with-action">
   <p class="banner-message">
     <a href="#">With a link</a>, some plain text and an action
   </p>
   <button class="button-destructive banner-action">Action button</button>
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">action</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;button class=\&quot;button-destructive banner-action\&quot;&gt;Action button&lt;/button&gt;&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt;, some plain text and an action&quot;</span><span style="color: #666666">,</span>
@@ -233,7 +247,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-destructive-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-destructive-with-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>With a link<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>, some plain text and an action
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
@@ -241,14 +255,14 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    <div class="banner-destructive-without-action">
+            
+            <div class="banner-destructive-without-action">
   <p class="banner-message">
     <a href="#">With a link</a> and some plain text but without an action
   </p>
   
 </div>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">message</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;With a link&lt;/a&gt; and some plain text but without an action&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span>
@@ -257,7 +271,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-destructive-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-destructive-without-action&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;banner-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>With a link<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span> and some plain text but without an action
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
@@ -265,9 +279,9 @@
 <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
 </pre></div>
 </div>
-                            </div>
-                        </main>
-                    
+    </div>
+</main>
+
 
     <footer class="group js-footer" id="footer" role="contentinfo">
 
@@ -297,6 +311,9 @@
 
     <script src="govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+    <script type="text/javascript" src="/public/javascripts/vendor/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="/public/javascripts/onready.js"></script>
+
   </body>
 </html>

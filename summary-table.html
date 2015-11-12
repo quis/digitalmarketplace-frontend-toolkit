@@ -53,7 +53,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
-    <!--[if !IE]><!--><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/><!--<![endif]--><!--[if IE 6]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/><![endif]--><!--[if IE 8]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/><![endif]-->
+    <!--[if !IE]><!-->
+<link rel="stylesheet" href="/public/stylesheets/index.css "/>
+<!--<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
+<![endif]-->
+
   </head>
 
   <body class="">
@@ -104,27 +119,28 @@
     </div>
     <!--end global-header-bar-->
 
-    
-                        <div id="global-breadcrumb" class="header-context">
-                          <nav>
-                            <ol class="group" role="breadcrumbs">
-                              <li>
-                                <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
-                              </li>
-                            </ol>
-                          </nav>
-                        </div>
-                        <main role="main" id="content" class="wrapper">
-                            <div id="wrapper">
-                                <header class="page-heading">
-                                    <h1>Summary tables</h1>
-                                </header>
-                                <div>
-                                    Examples use <a href="http://jinja.pocoo.org/docs/dev/templates/#call">Jinja2 "macro call" syntax</a>.
+    <div id="global-breadcrumb" class="header-context">
+  <nav>
+    <ol class="group" role="breadcrumbs">
+      <li>
+        <a href="/">Home</a>
+      </li>
+    </ol>
+  </nav>
+</div>
+<main role="main" id="content" class="wrapper">
+    <div id="wrapper">
+        <header class="page-heading">
+            <h1>Summary tables</h1>
+        </header>
+        <div class="grid-row">
+            <div class="page-description column-two-thirds">
+                Examples use <a href="http://jinja.pocoo.org/docs/dev/templates/#call">Jinja2 "macro call" syntax</a>.
 
-                                </div>
-                                    
-                                    
+            </div>
+        </div>
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table
@@ -231,7 +247,7 @@
     </tbody>
   </table>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
@@ -256,7 +272,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -363,8 +379,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table with no entries
@@ -374,7 +390,7 @@
     You haven't submited any services yet
   </p>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with no entries&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
@@ -389,7 +405,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table with no entries
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -399,8 +415,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table with many columns
@@ -466,7 +482,9 @@
     <td class="summary-item-field">
     <span>
     <div class="service-id">
+    
       <span class="service-id-chunk">1234</span><span class="service-id-chunk">5678</span><span class="service-id-chunk">9012</span><span class="service-id-chunk">3456</span>
+    
     </div>
   </span>
   </td>
@@ -505,7 +523,9 @@
     <td class="summary-item-field">
     <span>
     <div class="service-id">
+    
       <span class="service-id-chunk">5678</span><span class="service-id-chunk">9012</span><span class="service-id-chunk">1234</span><span class="service-id-chunk">3456</span>
+    
     </div>
   </span>
   </td>
@@ -544,7 +564,9 @@
     <td class="summary-item-field">
     <span>
     <div class="service-id">
+    
       <span class="service-id-chunk">9012</span><span class="service-id-chunk">1234</span><span class="service-id-chunk">5678</span><span class="service-id-chunk">3456</span>
+    
     </div>
   </span>
   </td>
@@ -576,13 +598,13 @@
     </tbody>
   </table>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with many columns&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
-    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SCS&quot;</span><span style="color: #666666">,</span>  <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;1234&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;5678&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;9012&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;3456&quot;</span><span style="color: #666666">],</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
-    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SaaS&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;5678&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;9012&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;1234&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;3456&quot;</span><span style="color: #666666">],</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
-    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;IaaS&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #666666">[</span><span style="color: #BA2121">&quot;9012&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;1234&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;5678&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;3456&quot;</span><span style="color: #666666">],</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
+    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 1&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SCS&quot;</span><span style="color: #666666">,</span>  <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;1234567890123456&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
+    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;SaaS&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;5678901212343456&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
+    <span style="color: #666666">{</span><span style="color: #BA2121">&quot;name&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Service 2&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;IaaS&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;id&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;9012123456783456&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;date&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;12 June 2015&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&quot;framework&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;G-Cloud 6&quot;</span><span style="color: #666666">},</span>
   <span style="color: #666666">],</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with many columns&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">empty_message</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;You haven&#39;t submited any services yet&quot;</span><span style="color: #666666">,</span>
@@ -607,7 +629,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table with many columns
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -672,7 +694,9 @@
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>1234<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>5678<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>9012<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>3456<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
     <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
@@ -711,7 +735,9 @@
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>5678<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>9012<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>1234<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>3456<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
     <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
@@ -750,7 +776,9 @@
     <span style="color: #008000; font-weight: bold">&lt;td</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-field&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;span&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;div</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>9012<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>1234<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>5678<span style="color: #008000; font-weight: bold">&lt;/span&gt;&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;service-id-chunk&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>3456<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+    
     <span style="color: #008000; font-weight: bold">&lt;/div&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
   <span style="color: #008000; font-weight: bold">&lt;/td&gt;</span>
@@ -783,8 +811,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table with manual rows
@@ -882,7 +910,7 @@
 
     </tbody>
   </table>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with manual rows&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.mapping_table</span><span style="color: #666666">(</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with manual rows&quot;</span><span style="color: #666666">,</span>
@@ -911,7 +939,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table with manual rows
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -1010,8 +1038,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table with top-level action
@@ -1024,7 +1052,7 @@
     You haven't submited any services yet
   </p>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with top-level action&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.top_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Add new service&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
@@ -1040,7 +1068,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table with top-level action
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -1053,8 +1081,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
       <span class="summary-item-heading-number">12.</span>
@@ -1066,7 +1094,7 @@
     You haven't submited any services yet
   </p>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with number&quot;</span><span style="color: #666666">,</span> <span style="color: #19177C">index</span><span style="color: #666666">=12)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[],</span>
@@ -1081,7 +1109,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>12.<span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
     
@@ -1093,8 +1121,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table with name field as link
@@ -1201,7 +1229,7 @@
     </tbody>
   </table>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with name field as link&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
@@ -1226,7 +1254,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table with name field as link
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -1333,8 +1361,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table with action button
@@ -1450,7 +1478,7 @@
     </tbody>
   </table>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with action button&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
   <span style="color: #666666">[</span>
@@ -1475,7 +1503,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table with action button
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -1591,8 +1619,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table with various types of service content
@@ -1724,7 +1752,7 @@
 
     </tbody>
   </table>
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with various types of service content&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span> <span style="color: #19177C">summary.mapping_table</span><span style="color: #666666">(</span>
   <span style="color: #19177C">caption</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;Summary table with content field as list&quot;</span><span style="color: #666666">,</span>
@@ -1766,7 +1794,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table with various types of service content
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -1899,8 +1927,8 @@
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
-                                    
-                                    
+            
+            
 <h2 class="summary-item-heading">
     
     Summary table with incomplete entry
@@ -1955,7 +1983,7 @@
     </tbody>
   </table>
 
-                                    <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
+            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #BA2121">&quot;summary-table.html&quot;</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #19177C">summary</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.heading</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Summary table with incomplete entry&quot;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{{</span> <span style="color: #19177C">summary.top_link</span><span style="color: #666666">(</span><span style="color: #BA2121">&quot;Edit&quot;</span><span style="color: #666666">,</span> <span style="color: #BA2121">&#39;#&#39;</span><span style="color: #666666">)</span> <span style="color: #BC7A00">}}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">call</span><span style="color: #666666">(</span><span style="color: #19177C">item</span><span style="color: #666666">)</span> <span style="color: #19177C">summary.list_table</span><span style="color: #666666">(</span>
@@ -1977,7 +2005,7 @@
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endcall</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-                                    <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;summary-item-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     
     Summary table with incomplete entry
 <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
@@ -2032,9 +2060,9 @@
   <span style="color: #008000; font-weight: bold">&lt;/table&gt;</span>
 </pre></div>
 </div>
-                            </div>
-                        </main>
-                    
+    </div>
+</main>
+
 
     <footer class="group js-footer" id="footer" role="contentinfo">
 
@@ -2064,6 +2092,9 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script><script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+    <script type="text/javascript" src="/public/javascripts/vendor/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="/public/javascripts/onready.js"></script>
+
   </body>
 </html>

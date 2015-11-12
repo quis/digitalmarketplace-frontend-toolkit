@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>Buttons - Digital Marketplace frontend toolkit</title>
+    <title>Temporary message - Digital Marketplace frontend toolkit</title>
 
     <script type="text/javascript">
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -131,68 +131,118 @@
 <main role="main" id="content" class="wrapper">
     <div id="wrapper">
         <header class="page-heading">
-            <h1>Buttons</h1>
+            <h1>Temporary message</h1>
         </header>
         <div class="grid-row">
             <div class="page-description column-two-thirds">
-                Buttons must be used inside a form, which they will submit when clicked
+                Used to describe the status of a page at a point in a process
             </div>
         </div>
+        <div class="grid-row">
+            <div class="column-one-half">
             
-            <input type="submit" class="button-save"  value="Save and continue" />
+            <aside role="complementary" class="temporary-message">
+  <h2 class="temporary-message-heading">
+    G‑Cloud 7 is closed for applications
+  </h2>
+  <p class="temporary-message-message">
+    Applications are being reviewed.
+  </p>
+  <p class="temporary-message-message">
+    G‑Cloud 7 services will be available from 23 November 2015.
+  </p>
+</aside>
+            </div>
+        </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;save&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Save and continue&quot;</span>
+  <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #BA2121">&quot;Applications are being reviewed.&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;G\u2011Cloud 7 services will be available from 23 November 2015.&quot;</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;G\u2011Cloud 7 is closed for applications&quot;</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-save&quot;</span>  <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Save and continue&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    G‑Cloud 7 is closed for applications
+  <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    Applications are being reviewed.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    G‑Cloud 7 services will be available from 23 November 2015.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/aside&gt;</span>
 </pre></div>
 </div>
+        <div class="grid-row">
+            <div class="column-one-half">
             
-            <input type="submit" class="button-secondary"  value="Return service to drafts" />
+            <aside role="complementary" class="temporary-message">
+  <h2 class="temporary-message-heading">
+    The G-Cloud 7 application deadline has passed
+  </h2>
+  <p class="temporary-message-message">
+    No services were submitted because you didn’t mark any as complete.
+  </p>
+  <p class="temporary-message-message">
+    <a href="#">View your application</a>
+  </p>
+</aside>
+            </div>
+        </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;secondary&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Return service to drafts&quot;</span>
+  <span style="color: #19177C">messages</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
+    <span style="color: #BA2121">&quot;No services were submitted because you didn\u2019t mark any as complete.&quot;</span><span style="color: #666666">,</span> 
+    <span style="color: #BA2121">&quot;&lt;a href=\&quot;#\&quot;&gt;View your application&lt;/a&gt;&quot;</span>
+<span style="color: #666666">],</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;The G-Cloud 7 application deadline has passed&quot;</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-secondary&quot;</span>  <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Return service to drafts&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    The G-Cloud 7 application deadline has passed
+  <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    No services were submitted because you didn’t mark any as complete.
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-message&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;a</span> <span style="color: #7D9029">href=</span><span style="color: #BA2121">&quot;#&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>View your application<span style="color: #008000; font-weight: bold">&lt;/a&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/aside&gt;</span>
 </pre></div>
 </div>
+        <div class="grid-row">
+            <div class="column-one-half">
             
-            <input type="submit" class="button-destructive"  value="Delete this user" />
+            <aside role="complementary" class="temporary-message-without-messages">
+  <h2 class="temporary-message-heading">
+    Example without any body copy that is quite long and may wrap onto multiple lines
+  </h2>
+</aside>
+            </div>
+        </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;destructive&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Delete this user&quot;</span>
+  <span style="color: #19177C">heading</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Example without any body copy that is quite long and may wrap onto multiple lines&quot;</span>
 <span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/button.html&quot;</span> <span style="color: #BC7A00">%}</span>
+  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/temporary-message.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
 </pre></div>
 </div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-destructive&quot;</span>  <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Delete this user&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
-</pre></div>
-</div>
-            
-            <input type="submit" class="button-secondary" name="continue_to_next_section" value="Save and continue" />
-            <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
-  <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;secondary&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;continue_to_next_section&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">label</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Save and continue&quot;</span>
-<span style="color: #BC7A00">%}</span>
-  <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/button.html&quot;</span> <span style="color: #BC7A00">%}</span>
-<span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
-</pre></div>
-</div>
-            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;submit&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;button-secondary&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;continue_to_next_section&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Save and continue&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+            <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;aside</span> <span style="color: #7D9029">role=</span><span style="color: #BA2121">&quot;complementary&quot;</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-without-messages&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+  <span style="color: #008000; font-weight: bold">&lt;h2</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;temporary-message-heading&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+    Example without any body copy that is quite long and may wrap onto multiple lines
+  <span style="color: #008000; font-weight: bold">&lt;/h2&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/aside&gt;</span>
 </pre></div>
 </div>
     </div>

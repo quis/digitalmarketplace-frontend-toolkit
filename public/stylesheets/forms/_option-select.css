@@ -112,3 +112,18 @@
         left: -9999em;
         height: 0px;
         overflow: hidden; }
+
+.govuk-option-select {
+  margin-bottom: 30px; }
+  .govuk-option-select .container-head .option-select-label {
+    display: block; }
+  .govuk-option-select .options-container {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none; }
+    @media (max-width: 640px) {
+      .govuk-option-select .options-container {
+        font-size: 14px;
+        line-height: 1.14286; } }

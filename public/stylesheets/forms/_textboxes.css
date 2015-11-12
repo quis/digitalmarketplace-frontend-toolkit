@@ -33,14 +33,13 @@
   height: 50px;
   margin: 0 0 15px 0;
   padding: 5px;
-  border: 1px solid #bfc1c3; }
+  border: 1px solid #bfc1c3;
+  width: 100%;
+  /* IE<8 cannot include borders and padding as part of width */ }
   @media (max-width: 640px) {
     .text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
       font-size: 16px;
       line-height: 1.25; } }
-  @media (min-width: 769px) {
-    .text-box-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-before, .text-box-with-unit-after-with-error, .text-box-with-unit-after, .text-box {
-      width: 66%; } }
 
 .text-box-with-error, .text-box-large-with-error, .text-box-with-unit-before-with-error, .text-box-with-unit-after-with-error {
   border: 5px solid #b10e1e;

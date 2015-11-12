@@ -1,0 +1,26 @@
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.govuk-option-select .filter-field-text {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #bfc1c3; }
+  @media (max-width: 640px) {
+    .govuk-option-select .filter-field-text {
+      font-size: 14px;
+      line-height: 1.14286; } }

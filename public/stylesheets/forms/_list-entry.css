@@ -22,7 +22,8 @@
 
 .input-list .list-entry {
   vertical-align: middle;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  position: relative; }
 .input-list .list-entry-remove {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -30,16 +31,23 @@
   font-weight: 400;
   text-transform: none;
   display: block;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-top: 5px;
+  position: static; }
   @media (max-width: 640px) {
     .input-list .list-entry-remove {
       font-size: 16px;
       line-height: 1.25; } }
-  @media (min-width: 769px) {
+  @media (min-width: 641px) {
     .input-list .list-entry-remove {
       display: -moz-inline-stack;
       display: inline-block;
-      margin: 0 0 0 0.6em; } }
+      margin: 0 0 0 0.6em;
+      position: absolute;
+      top: 6px;
+      /* height of textbox minus its top-padding */
+      left: 100%;
+      margin-left: 0.6em; } }
 .input-list .text-box {
   padding-left: 1.84em;
   width: 100%;
@@ -47,8 +55,7 @@
   @media (min-width: 769px) {
     .input-list .text-box {
       display: -moz-inline-stack;
-      display: inline-block;
-      width: 66%; } }
+      display: inline-block; } }
 .input-list .text-box-number-label {
   float: left;
   font-family: "nta", Arial, sans-serif;
