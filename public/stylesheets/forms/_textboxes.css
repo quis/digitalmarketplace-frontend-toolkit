@@ -33,7 +33,7 @@
   height: 50px;
   margin: 0 0 15px 0;
   padding: 5px;
-  border: 1px solid #bfc1c3;
+  border: 2px solid #6f777b;
   width: 100%;
   /* IE<8 cannot include borders and padding as part of width */ }
   @media (max-width: 640px) {
@@ -68,7 +68,7 @@
 .text-box-unit {
   display: -moz-inline-stack;
   display: inline-block;
-  color: #bfc1c3;
+  color: #6f777b;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;

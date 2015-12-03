@@ -14,12 +14,13 @@
 @-o-viewport {
   width: device-width; }
 
+@media (min-width: 900px) {
+  .column-two-thirds .pricing, .column-two-thirds .validation-wrapper-pricing {
+    margin-right: -100%; }
+ }
+
 .pricing {
   margin-top: 15px; }
-  @media (min-width: 900px) {
-    .column-two-thirds .pricing {
-      margin-right: -100%; }
- }
   .pricing .pricing-column {
     position: relative;
     display: -moz-inline-stack;
@@ -78,7 +79,7 @@
       .pricing .pricing-input-select {
         margin-left: 0; } }
   .pricing .pricing-unit {
-    color: #bfc1c3;
+    color: #6f777b;
     position: absolute;
     bottom: 12px;
     left: 10px;

@@ -10,7 +10,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -104,7 +104,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -121,7 +121,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -151,7 +151,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -220,6 +220,34 @@
         width: auto;
         vertical-align: baseline; } }
 
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.back-link {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  margin-top: 30px; }
+  @media (max-width: 640px) {
+    .back-link {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    .back-link {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+
 @-ms-viewport {
   width: device-width; }
 
@@ -284,7 +312,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -515,7 +543,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -721,103 +749,7 @@
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
-  content: "";
-  display: block;
-  clear: both; }
-
-.search-result {
-  padding: 0 0 15px;
-  margin: 0 0 15px;
-  border-bottom: 1px solid #bfc1c3; }
-
-.search-result-title {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 700;
-  text-transform: none;
-  margin: 0; }
-  @media (max-width: 640px) {
-    .search-result-title {
-      font-size: 16px;
-      line-height: 1.25; } }
-  .search-result-title a {
-    text-decoration: none; }
-
-.search-result-supplier {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  margin: 5px 0 0 0; }
-  @media (max-width: 640px) {
-    .search-result-supplier {
-      font-size: 14px;
-      line-height: 1.14286; } }
-
-.search-result-excerpt {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  margin: 5px 0 0 0; }
-  @media (max-width: 640px) {
-    .search-result-excerpt {
-      font-size: 14px;
-      line-height: 1.14286; } }
-
-.search-result-highlighted-text {
-  display: inline;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  text-transform: none;
-  background: none; }
-  @media (max-width: 640px) {
-    .search-result-highlighted-text {
-      font-size: 14px;
-      line-height: 1.14286; } }
-
-.search-result-metadata {
-  margin: 0;
-  padding: 0; }
-
-.search-result-metadata-item {
-  list-style: none;
-  display: -moz-inline-stack;
-  display: inline-block;
-  margin: 5px 10px 0 0;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857;
-  font-weight: 400;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .search-result-metadata-item {
-      font-size: 12px;
-      line-height: 1.25; } }
-
-@font-face {
-  font-family: GDS-Logo;
-  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
-
-@-ms-viewport {
-  width: device-width; }
-
-@-o-viewport {
-  width: device-width; }
-
-@-ms-viewport {
-  width: device-width; }
-
-@-o-viewport {
-  width: device-width; }
-
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -936,9 +868,8 @@
     line-height: 1.31579;
     font-weight: 400;
     text-transform: none;
-    color: #6f777b;
     list-style: disc;
-    padding: 5px 0 0 20px; }
+    padding: 0 0 0 20px; }
     @media (max-width: 640px) {
       .browse-list-item-status-quiet .browse-list-item-status-list, .browse-list-item-status-default .browse-list-item-status-list, .browse-list-item-status-happy .browse-list-item-status-list, .browse-list-item-status-angry .browse-list-item-status-list {
         font-size: 16px;
@@ -1151,7 +1082,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1165,7 +1096,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 .temporary-message-without-messages, .temporary-message {
   background: #005ea5;
   color: #fff;
-  padding: 15px 15px 18px 15px; }
+  padding: 15px 15px 18px 15px;
+  margin-bottom: 30px; }
 
 .temporary-message-without-messages {
   padding-bottom: 5px; }
@@ -1340,7 +1272,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1392,7 +1324,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   margin: 13px -1.6em 0 0;
   position: relative;
   left: 10px;
-  color: #bfc1c3;
+  color: #6f777b;
   font-weight: bold;
   pointer-events: none; }
   @media (max-width: 640px) {
@@ -1417,7 +1349,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1579,7 +1511,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -1594,12 +1526,13 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 @-o-viewport {
   width: device-width; }
 
+@media (min-width: 900px) {
+  .column-two-thirds .pricing, .column-two-thirds .validation-wrapper-pricing {
+    margin-right: -100%; }
+ }
+
 .pricing {
   margin-top: 15px; }
-  @media (min-width: 900px) {
-    .column-two-thirds .pricing {
-      margin-right: -100%; }
- }
   .pricing .pricing-column {
     position: relative;
     display: -moz-inline-stack;
@@ -1658,7 +1591,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
       .pricing .pricing-input-select {
         margin-left: 0; } }
   .pricing .pricing-unit {
-    color: #bfc1c3;
+    color: #6f777b;
     position: absolute;
     bottom: 12px;
     left: 10px;
@@ -1706,7 +1639,6 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   text-transform: none;
   padding-top: 9px;
   padding-bottom: 6px;
-  font-weight: bold;
   margin: 0 0 10px 0; }
   @media (max-width: 640px) {
     .question-heading, .question-heading-with-hint {
@@ -1722,21 +1654,21 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 
 .question-description {
   font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
+  font-size: 16px;
+  line-height: 1.25;
   font-weight: 400;
   text-transform: none;
-  padding-top: 2px;
-  padding-bottom: 8px;
-  margin: 0 0 10px 0;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  margin: 0 0 0 0;
   clear: left; }
   @media (max-width: 640px) {
     .question-description {
-      font-size: 16px;
-      line-height: 1.25; } }
+      font-size: 14px;
+      line-height: 1.14286; } }
   @media (min-width: 641px) {
     .question-description {
-      padding-top: 0;
+      padding-top: 5px;
       padding-bottom: 5px; } }
 
 .question-number {
@@ -1745,8 +1677,10 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   line-height: 1.25;
   font-weight: 700;
   text-transform: none;
-  display: block;
-  margin-bottom: -20px; }
+  display: inline;
+  word-spacing: -0.1em;
+  margin-right: 0.2em;
+  float: left; }
   @media (max-width: 640px) {
     .question-number {
       font-size: 18px;
@@ -1755,6 +1689,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
     content: "."; }
   @media (min-width: 1080px) {
     .question-number {
+      float: none;
       position: relative;
       height: 50px;
       display: block;
@@ -1762,6 +1697,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
       left: -100px;
       width: 80px;
       text-align: right; }
+      .validation-wrapper .question-number {
+        left: -120px; }
       .question-number:after {
         content: ""; } }
 
@@ -1851,8 +1788,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 
 .summary-item-heading, .summary-item-heading-first {
   font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
+  font-size: 27px;
+  line-height: 1.11111;
   font-weight: 700;
   text-transform: none;
   position: relative;
@@ -1863,8 +1800,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   box-sizing: border-box; }
   @media (max-width: 640px) {
     .summary-item-heading, .summary-item-heading-first {
-      font-size: 18px;
-      line-height: 1.2; } }
+      font-size: 20px;
+      line-height: 1.11111; } }
 
 .summary-item-heading-first {
   padding-top: 0; }
@@ -1875,6 +1812,24 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   left: -55px;
   text-align: right; }
 
+.summary-item-description {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  margin: 0 0 4px 0; }
+  @media (max-width: 640px) {
+    .summary-item-description {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    .summary-item-description {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+
 .summary-item-top-level-action {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -1884,7 +1839,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   padding-top: 2px;
   padding-bottom: 8px;
   text-align: right;
-  margin: -36px 0 0 0;
+  margin: -33px 0 0 0;
   padding-left: 75%;
   position: relative;
   z-index: 10;
@@ -1906,8 +1861,8 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
   font-weight: 400;
   text-transform: none;
   margin: 0 0 15px 0;
-  border-top: 1px solid #dee0e2;
-  border-bottom: 1px solid #dee0e2;
+  border-top: 1px solid #bfc1c3;
+  border-bottom: 1px solid #bfc1c3;
   padding-top: 10px;
   padding-bottom: 10px;
   max-width: 100%; }
@@ -1919,7 +1874,7 @@ https://github.com/alphagov/static/blob/da8aeeaa749093eab30286d7fc9f965533b66f47
 table.summary-item-body {
   width: 100%;
   margin: 0 0 15px 0;
-  border-bottom: 1px solid #dee0e2; }
+  border-bottom: 1px solid #bfc1c3; }
 
 .summary-item-row-incomplete, .summary-item-row {
   font-family: "nta", Arial, sans-serif;
@@ -1928,7 +1883,7 @@ table.summary-item-body {
   font-weight: 400;
   text-transform: none;
   text-align: right;
-  border-top: 1px solid #dee0e2; }
+  border-top: 1px solid #bfc1c3; }
   @media (max-width: 640px) {
     .summary-item-row-incomplete, .summary-item-row {
       font-size: 16px;
@@ -1938,8 +1893,8 @@ table.summary-item-body {
   border-collapse: collapse;
   border-spacing: 0; }
   table.summary-item-body tbody td {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 9px;
     vertical-align: top; }
 
 .summary-item-field-first, .summary-item-field-first-wider, .summary-item-field-with-action, .summary-item-field {
@@ -1959,6 +1914,10 @@ table.summary-item-body {
     margin: 0;
     list-style-type: disc;
     padding: 0 0 0 20px; }
+  .summary-item-field-first .multiquestion-answer, .summary-item-field-first-wider .multiquestion-answer, .summary-item-field-with-action .multiquestion-answer, .summary-item-field .multiquestion-answer {
+    padding-bottom: 10px; }
+    .summary-item-field-first .multiquestion-answer:last-child, .summary-item-field-first-wider .multiquestion-answer:last-child, .summary-item-field-with-action .multiquestion-answer:last-child, .summary-item-field .multiquestion-answer:last-child {
+      padding-bottom: 0; }
 
 .summary-item-field-first {
   width: 33.333%;
@@ -1983,7 +1942,7 @@ table.summary-item-body {
   font-weight: 700;
   text-transform: none;
   text-align: left;
-  border-top: 1px solid #dee0e2; }
+  border-top: 1px solid #bfc1c3; }
   @media (max-width: 640px) {
     .summary-item-field-headings-visible {
       font-size: 14px;
@@ -1994,6 +1953,11 @@ table.summary-item-body {
 
 .summary-item-field-heading-first {
   padding-left: 0; }
+
+a.summary-item-remove-link {
+  color: #b10e1e; }
+  a.summary-item-remove-link:hover {
+    color: #df3034; }
 
 .summary-item-row-incomplete .summary-item-field a {
   color: #cd4c0b; }
@@ -2024,7 +1988,7 @@ table.summary-item-body {
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -2042,7 +2006,7 @@ table.summary-item-body {
   height: 50px;
   margin: 0 0 15px 0;
   padding: 5px;
-  border: 1px solid #bfc1c3;
+  border: 2px solid #6f777b;
   width: 100%;
   /* IE<8 cannot include borders and padding as part of width */ }
   @media (max-width: 640px) {
@@ -2077,7 +2041,7 @@ table.summary-item-body {
 .text-box-unit {
   display: -moz-inline-stack;
   display: inline-block;
-  color: #bfc1c3;
+  color: #6f777b;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -2107,6 +2071,17 @@ table.summary-item-body {
 
 @-o-viewport {
   width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
+  content: "";
+  display: block;
+  clear: both; }
 
 .validation-masthead {
   border: 5px solid #b10e1e;
@@ -2166,8 +2141,7 @@ table.summary-item-body {
 .validation-wrapper {
   border-left: 5px solid #b10e1e;
   padding: 0 0 0 15px;
-  margin: 15px 0 30px 0;
-  overflow: hidden; }
+  margin: 15px 0 30px 0; }
   .validation-wrapper .question {
     margin: 0; }
   .validation-wrapper .question-heading, .validation-wrapper .question-heading-with-hint {
@@ -2270,7 +2244,7 @@ table.summary-item-body {
 @-o-viewport {
   width: device-width; }
 
-.grid-row:after, .question:after, .question-first:after {
+.grid-row:after, .question:after, .question-first:after, .validation-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -2369,8 +2343,12 @@ a.version-link:hover {
       font-size: 16px;
       line-height: 1.25; } }
   .index-list li {
-    margin-bottom: 5px;
     list-style: none; }
+  .index-list a {
+    display: inline-block;
+    margin-bottom: 5px; }
+  .index-list .index-list {
+    padding: 0 0 0 15px; }
 
 .page-description {
   margin-bottom: 30px;

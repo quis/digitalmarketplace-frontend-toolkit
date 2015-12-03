@@ -128,9 +128,8 @@
     line-height: 1.31579;
     font-weight: 400;
     text-transform: none;
-    color: #6f777b;
     list-style: disc;
-    padding: 5px 0 0 20px; }
+    padding: 0 0 0 20px; }
     @media (max-width: 640px) {
       .browse-list-item-status-quiet .browse-list-item-status-list, .browse-list-item-status-default .browse-list-item-status-list, .browse-list-item-status-happy .browse-list-item-status-list, .browse-list-item-status-angry .browse-list-item-status-list {
         font-size: 16px;

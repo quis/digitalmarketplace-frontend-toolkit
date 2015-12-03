@@ -54,19 +54,19 @@
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
     <!--[if !IE]><!-->
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index.css "/>
 <!--<![endif]-->
 <!--[if IE 6]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
 <![endif]-->
 <!--[if IE 7]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
 <![endif]-->
 <!--[if IE 8]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
 <![endif]-->
 <!--[if IE 9]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
 <![endif]-->
 
   </head>
@@ -123,7 +123,7 @@
   <nav>
     <ol class="group" role="breadcrumbs">
       <li>
-        <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
+        <a href="/">Home</a>
       </li>
     </ol>
   </nav>
@@ -154,8 +154,8 @@
           
             <input type="radio" name="minimumContractPeriod" id="input-minimumContractPeriod-1" value="Heure"  />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-minimumContractPeriod-2">
@@ -163,8 +163,8 @@
           
             <input type="radio" name="minimumContractPeriod" id="input-minimumContractPeriod-2" value="Day"  />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-minimumContractPeriod-3">
@@ -172,8 +172,8 @@
           
             <input type="radio" name="minimumContractPeriod" id="input-minimumContractPeriod-3" value="Month"  />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-minimumContractPeriod-4">
@@ -181,8 +181,8 @@
           
             <input type="radio" name="minimumContractPeriod" id="input-minimumContractPeriod-4" value="Year"  />
           
+          
         </label>
-        
       
     
     
@@ -192,13 +192,13 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Radio buttons&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Heure&quot;</span><span style="color: #666666">,</span> 
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hour&quot;</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Hour&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;value&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Heure&quot;</span>
     <span style="color: #666666">},</span> 
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Day&quot;</span>
@@ -232,8 +232,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-minimumContractPeriod-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Heure&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-minimumContractPeriod-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -241,8 +241,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-minimumContractPeriod-2&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Day&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-minimumContractPeriod-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -250,8 +250,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-minimumContractPeriod-3&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Month&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-minimumContractPeriod-4&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -259,8 +259,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;minimumContractPeriod&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-minimumContractPeriod-4&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Year&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
     
     
@@ -288,8 +288,8 @@
           
             <input type="radio" name="serviceStatus" id="input-serviceStatus-1" value="Public" checked="checked" />
           
+          
         </label>
-        
       
         
         <label class="selection-button selection-button-inline" for="input-serviceStatus-2">
@@ -297,8 +297,8 @@
           
             <input type="radio" name="serviceStatus" id="input-serviceStatus-2" value="Private"  />
           
+          
         </label>
-        
       
     
     
@@ -343,8 +343,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;serviceStatus&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-serviceStatus-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Public&quot;</span> <span style="color: #7D9029">checked=</span><span style="color: #BA2121">&quot;checked&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button selection-button-inline&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-serviceStatus-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -352,8 +352,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;serviceStatus&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-serviceStatus-2&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Private&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
     
     
@@ -381,8 +381,8 @@
           
             <input type="checkbox" name="categories" id="input-categories-1" value="Accounting and finance" checked="checked" />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-categories-2">
@@ -390,8 +390,8 @@
           
             <input type="checkbox" name="categories" id="input-categories-2" value="Business intelligence and analytics"  />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-categories-3">
@@ -399,8 +399,8 @@
           
             <input type="checkbox" name="categories" id="input-categories-3" value="Collaboration" checked="checked" />
           
+          
         </label>
-        
       
     
     
@@ -410,8 +410,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Choose a category&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;categories&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #BA2121">&quot;Accounting and finance&quot;</span><span style="color: #666666">,</span> 
@@ -450,8 +450,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;categories&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-categories-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Accounting and finance&quot;</span> <span style="color: #7D9029">checked=</span><span style="color: #BA2121">&quot;checked&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-categories-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -459,8 +459,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;categories&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-categories-2&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Business intelligence and analytics&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-categories-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -468,8 +468,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;categories&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-categories-3&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Collaboration&quot;</span> <span style="color: #7D9029">checked=</span><span style="color: #BA2121">&quot;checked&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
     
     
@@ -483,6 +483,10 @@
   <fieldset class="question first-question" id="offlineWorking">
     <legend>
       <span class="question-heading ">
+        
+          <span class="question-number">
+            19
+          </span>
         
         Offline working supported
       </span>
@@ -506,8 +510,9 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Offline working supported&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;19&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;boolean&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;offlineWorking&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
 <span style="color: #BC7A00">%}</span>
@@ -518,6 +523,10 @@
             <div class="code open" data-lang="html"><h3 class="code-label">HTML</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%">  <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;offlineWorking&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading &quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            19
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
         
         Offline working supported
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
@@ -563,13 +572,13 @@
           
             <input type="radio" name="lot" id="input-lot-1" value="Infrastructure as a Service"  />
           
-        </label>
-        
-          <p class="question-description">
-            Infrastructure is the hardware that makes software work. It's the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.
+          
+            <p class="question-description">
+              Infrastructure is the hardware that makes software work. It's the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.
 
-          </p>
-        
+            </p>
+          
+        </label>
       
     
     
@@ -579,16 +588,16 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint giving some information about how to answer the question.&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkbox with hint and description&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
-        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span><span style="color: #666666">,</span> 
-        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span>
+        <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span><span style="color: #666666">,</span> 
+        <span style="color: #BA2121">&quot;description&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.\n&quot;</span>
     <span style="color: #666666">}</span>
 <span style="color: #666666">],</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot&quot;</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;radio&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;lot&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint giving some information about how to answer the question.&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -615,13 +624,13 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;radio&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;lot&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Infrastructure as a Service&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
-        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
-          <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
-            Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.
+          
+            <span style="color: #008000; font-weight: bold">&lt;p</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-description&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+              Infrastructure is the hardware that makes software work. It&#39;s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware.
 
-          <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
-        
+            <span style="color: #008000; font-weight: bold">&lt;/p&gt;</span>
+          
+        <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
       
     
     
@@ -649,8 +658,8 @@
           
             <input type="checkbox" name="lot" id="input-lot-1" value="service provider assertion?"  />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-lot-2">
@@ -658,8 +667,8 @@
           
             <input type="checkbox" name="lot" id="input-lot-2" value="independent validation of assertion?"  />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-lot-3">
@@ -667,8 +676,8 @@
           
             <input type="checkbox" name="lot" id="input-lot-3" value="independent testing of implementation?"  />
           
+          
         </label>
-        
       
     
     
@@ -720,8 +729,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;lot&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;service provider assertion?&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-lot-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -729,8 +738,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;lot&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-2&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;independent validation of assertion?&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-lot-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -738,8 +747,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;lot&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-lot-3&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;independent testing of implementation?&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
     
     
@@ -760,6 +769,10 @@
     <legend>
       <span class="question-heading ">
         
+          <span class="question-number">
+            77
+          </span>
+        
         Checkboxes with an error
       </span>
       
@@ -777,8 +790,8 @@
           
             <input type="checkbox" name="vegetables" id="input-vegetables-1" value="Carrot"  />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-vegetables-2">
@@ -786,8 +799,8 @@
           
             <input type="checkbox" name="vegetables" id="input-vegetables-2" value="Onion"  />
           
+          
         </label>
-        
       
         
         <label class="selection-button" for="input-vegetables-3">
@@ -795,8 +808,8 @@
           
             <input type="checkbox" name="vegetables" id="input-vegetables-3" value="Collaboration"  />
           
+          
         </label>
-        
       
     
     
@@ -808,9 +821,11 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;vegetables&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Checkboxes with an error&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #666666">77,</span>
+  <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Answer required&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">type</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;checkbox&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">options</span> <span style="color: #666666">=</span> <span style="color: #666666">[</span>
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Carrot&quot;</span>
@@ -821,8 +836,7 @@
     <span style="color: #666666">{</span>
         <span style="color: #BA2121">&quot;label&quot;</span><span style="color: #666666">:</span> <span style="color: #BA2121">&quot;Collaboration&quot;</span>
     <span style="color: #666666">}</span>
-<span style="color: #666666">],</span>
-  <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;vegetables&quot;</span>
+<span style="color: #666666">]</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/selection-buttons.html&quot;</span> <span style="color: #BC7A00">%}</span>
 <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">endwith</span> <span style="color: #BC7A00">%}</span>
@@ -833,6 +847,10 @@
   <span style="color: #008000; font-weight: bold">&lt;fieldset</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question first-question&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;vegetables&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
     <span style="color: #008000; font-weight: bold">&lt;legend&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading &quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+        
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            77
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
         
         Checkboxes with an error
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
@@ -851,8 +869,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;vegetables&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-vegetables-1&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Carrot&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-vegetables-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -860,8 +878,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;vegetables&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-vegetables-2&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Onion&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
         
         <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;selection-button&quot;</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-vegetables-3&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
@@ -869,8 +887,8 @@
           
             <span style="color: #008000; font-weight: bold">&lt;input</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;checkbox&quot;</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;vegetables&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;input-vegetables-3&quot;</span> <span style="color: #7D9029">value=</span><span style="color: #BA2121">&quot;Collaboration&quot;</span>  <span style="color: #008000; font-weight: bold">/&gt;</span>
           
+          
         <span style="color: #008000; font-weight: bold">&lt;/label&gt;</span>
-        
       
     
     
@@ -911,10 +929,10 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="/public/javascripts/vendor/jquery-1.11.0.js"></script>
 <script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/vendor/polyfills/bind.js"></script> <script type="text/javascript" src="../public/javascripts/govuk_frontend_toolkit/govuk/selection-buttons.js"></script>
 
-<script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+<script type="text/javascript" src="/public/javascripts/onready.js"></script>
 
   </body>
 </html>

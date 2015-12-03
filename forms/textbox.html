@@ -54,19 +54,19 @@
     <meta property="og:image" content="../govuk_template/assets/images/opengraph-image.png?0.12.0">
 
     <!--[if !IE]><!-->
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index.css "/>
 <!--<![endif]-->
 <!--[if IE 6]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie6.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index-ie6.css "/>
 <![endif]-->
 <!--[if IE 7]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie7.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index-ie7.css "/>
 <![endif]-->
 <!--[if IE 8]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie8.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index-ie8.css "/>
 <![endif]-->
 <!--[if IE 9]>
-<link rel="stylesheet" href="/digitalmarketplace-frontend-toolkit/public/stylesheets/index-ie9.css "/>
+<link rel="stylesheet" href="/public/stylesheets/index-ie9.css "/>
 <![endif]-->
 
   </head>
@@ -123,7 +123,7 @@
   <nav>
     <ol class="group" role="breadcrumbs">
       <li>
-        <a href="/digitalmarketplace-frontend-toolkit/">Home</a>
+        <a href="/">Home</a>
       </li>
     </ol>
   </nav>
@@ -191,7 +191,11 @@
     <label for="input-question-2">
       <span class="question-heading-with-hint">
         
-        Text box with hint
+          <span class="question-number">
+            22
+          </span>
+        
+        Text box with hint and question number
         
       </span>
       
@@ -212,7 +216,8 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;22&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint and question number&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-2&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Now I know what to type here&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hint comprising further information about the question&quot;</span>
@@ -225,7 +230,11 @@
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-2&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
-        Text box with hint
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            22
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+        Text box with hint and question number
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
@@ -329,8 +338,8 @@
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
   <span style="color: #19177C">large</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Large textbox with word count limit of 50 words&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">max_length_in_words</span> <span style="color: #666666">=</span> <span style="color: #666666">50,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Large textbox with word count limit of 50 words&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-4&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;One two three four five&quot;</span>
 <span style="color: #BC7A00">%}</span>
@@ -442,7 +451,11 @@
     <label for="input-question-6">
       <span class="question-heading-with-hint">
         
-        Text box with hint and error
+          <span class="question-number">
+            13
+          </span>
+        
+        Text box with hint, question number and error
         
       </span>
       
@@ -469,10 +482,11 @@
         </div>
             <div class="code open" data-lang="jinja"><h3 class="code-label">Jinja</h3><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #BC7A00">{%</span>
   <span style="color: #008000; font-weight: bold">with</span>
-  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;eg hello@example.com&quot;</span><span style="color: #666666">,</span>
-  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint and error&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">name</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;question-6&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">hint</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;eg hello@example.com&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Text box with hint, question number and error&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">value</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;hello2example.com&quot;</span><span style="color: #666666">,</span>
+  <span style="color: #19177C">question_number</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;13&quot;</span><span style="color: #666666">,</span>
   <span style="color: #19177C">error</span> <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Must be a valid email address&quot;</span>
 <span style="color: #BC7A00">%}</span>
   <span style="color: #BC7A00">{%</span> <span style="color: #008000; font-weight: bold">include</span> <span style="color: #BA2121">&quot;toolkit/forms/textbox.html&quot;</span> <span style="color: #BC7A00">%}</span>
@@ -485,7 +499,11 @@
     <span style="color: #008000; font-weight: bold">&lt;label</span> <span style="color: #7D9029">for=</span><span style="color: #BA2121">&quot;input-question-6&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
       <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-heading-with-hint&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
         
-        Text box with hint and error
+          <span style="color: #008000; font-weight: bold">&lt;span</span> <span style="color: #7D9029">class=</span><span style="color: #BA2121">&quot;question-number&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+            13
+          <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
+        
+        Text box with hint, question number and error
         
       <span style="color: #008000; font-weight: bold">&lt;/span&gt;</span>
       
@@ -754,10 +772,10 @@
 
     <script src="../govuk_template/assets/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
 
-    <script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/vendor/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="/public/javascripts/vendor/jquery-1.11.0.js"></script>
 <script type="text/javascript" src="../public/javascripts/vendor/hogan-3.0.2.min.js"></script> <script type="text/javascript" src="../public/javascripts/word-counter.js"></script>
 
-<script type="text/javascript" src="/digitalmarketplace-frontend-toolkit/public/javascripts/onready.js"></script>
+<script type="text/javascript" src="/public/javascripts/onready.js"></script>
 
   </body>
 </html>
